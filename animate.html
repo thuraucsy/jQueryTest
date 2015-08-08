@@ -9,6 +9,14 @@
 		background: green;
 		padding: 2em;
 		position: relative;
+
+		-webkit-transition: border-radius 3s;
+		-moz-transition: border-radius 3s;
+		transition: border-radius 3s;
+	}
+
+	.rounded {
+		border-radius: 50px;
 	}
 	</style>
 </head>
@@ -38,6 +46,8 @@
 		.animate({
 			'top': h,
 		}, { duration: 200, queue: false});
+
+		box.addClass('rounded');
 
 		// box.animate({
 		// 	'fontSize': '+=5',
